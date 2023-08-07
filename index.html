@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+
+<body>
+
+    <main class="main-container">
+        <div class="top-section">
+
+            <div class="form-container">
+                <form id="main-form">
+                    <div class="content-wrapper">
+                        <div class="input-group">
+                            <label for="day">DAY</label>
+                            <input type="text" name="day" placeholder="DD" />
+                            <p id="day-validation" class="hidden">must be a valid day</p>
+                            <p id="date-validation" class="hidden">must be a valid date</p>
+                            <p id="day-required" class="hidden">this field is required</p>
+                        </div>
+                        <div class="input-group">
+                            <label for="month">MONTH</label>
+                            <input type="text" name="month" placeholder="MM" />
+                            <p id="month-validation" class="hidden">must be a valid month</p>
+                            <p id="month-required" class="hidden">this field is required</p>
+                        </div>
+                        <div class="input-group">
+                            <label for="year">YEAR</label>
+                            <input type="text" name="year" placeholder="YYYY" />
+                            <p id="year-validation" class="hidden">must be in the past</p>
+                            <p id="year-required" class="hidden">this field is required</p>
+                        </div>
+                    </div>
+                    <button class="btn-circle">
+                        <img src="./assets/images/icon-arrow.svg" />
+                    </button>
+            </div>
+            </form>
+        </div>
+
+        <div class="bottom-section">
+
+            <div class="display-group">
+                <div id="years-container" class="results">
+                    <span>-</span>
+                    <span>-</span>
+                </div>
+                <p>years</p>
+            </div>
+            <div class="display-group">
+                <div id="months-container" class="results">
+                    <span>-</span>
+                    <span>-</span>
+                </div>
+                <p>months</p>
+            </div>
+            <div class="display-group">
+                <div id="days-container" class="results">
+                    <span>-</span>
+                    <span>-</span>
+                </div>
+                <p>days</p>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
