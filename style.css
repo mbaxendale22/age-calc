@@ -99,10 +99,6 @@ body {
     color: hsl(0, 1%, 44%);
     font-weight: 700;
 }
-/* label:invalid {
-    color: red;
-    font-size: 2rem;
-} */
 
 .btn-circle {
     border-radius: 50%;
@@ -174,6 +170,7 @@ body {
 
     .main-container {
         width: 350px;
+        height: 600px;
     }
 
     .btn-circle {
@@ -181,11 +178,20 @@ body {
     }
     .form-container {
         margin: 0rem 4rem 0 4rem;
+        height: 85%;
     }
     .display-group p {
         font-size: 6rem;
-        font-weight: 900;
-        font-style: italic;
-        padding-left: 1rem;
+    }
+
+    .input-group input {
+        font-size: 2.5rem;
+    }
+    .input-group label {
+        font-size: 1.5rem;
+    }
+    .input-group p {
+        font-size: 1.15rem;
+        margin-bottom: 0;
     }
 }
